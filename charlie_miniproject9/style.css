@@ -1,0 +1,73 @@
+nav {
+  background-color: #ffd6ef;
+}
+
+h3 {
+  font-size: 60px;
+  font-family: Brush Script MT;
+  color: #3da2f5
+
+}
+
+img {
+  width: 600px;
+}
+
+.description {
+  font-size: 22px;
+  font-family: Georgia;
+}
+
+h5 {
+  font-size: 30px;
+  font-family: Times New Roman;
+
+}
+.center {
+  text-align: center;
+  border: 3px solid green;
+}
+
+
+h1 {
+
+  color: #f5b490;
+}
+
+p {
+  font-family: Courier New;
+}
+.songTitle {
+  font-size: 60px;
+  font-family: Brush Script MT;
+}
+
+.artistName {
+  font-size: 20px;
+}
+.link {
+  font-size: 25px;
+}
+
+.lyrics{
+  font-size: 20px;
+}
+
+#Coldplay {
+  color: red;
+  font-size: 50px
+}
+
+#everglow {
+  text-shadow: 1px 2px;
+  color: #f57451
+}
+
+#fixyou {
+  text-shadow: 1px 2px;
+  color: #5987e3
+}
+
+.list {
+  font-size: 22px;
+}
