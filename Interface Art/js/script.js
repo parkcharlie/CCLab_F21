@@ -1,7 +1,7 @@
 
 let dragonPosSlider = document.getElementById('dragonPositionSlider')
 let wingSpSlider = document.getElementById('wingSpeedSlider')
-
+let dragonCol = document.getElementById('dragonColor')
 
 
 
@@ -41,7 +41,12 @@ function dragon(x, y) {
 
 function dragonBody(x, y) {
   noStroke();
-  fill(17, 171, 38);
+
+  let sliderVal3 = dragonCol.value;
+  let c = map(sliderVal3, 0, 100, -400, 400);
+
+  fill(17+c, 171, 38);
+
   translate(x, y);
 
   //tail
@@ -106,7 +111,10 @@ function dragonBody(x, y) {
 function dragonWings(x, y, mirror) {
   push();
 
-  fill(17, 171, 38);
+  let sliderVal3 = dragonCol.value;
+  let c = map(sliderVal3, 0, 100, -400, 400);
+
+  fill(17+c, 171, 38);
 
 
   let sliderVal2 = wingSpSlider.value;
