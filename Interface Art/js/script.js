@@ -2,7 +2,7 @@
 let dragonPosSlider = document.getElementById('dragonPositionSlider')
 let wingSpSlider = document.getElementById('wingSpeedSlider')
 let dragonCol = document.getElementById('dragonColor')
-
+let bkColor = document.getElementById('backColor')
 
 
 
@@ -18,7 +18,9 @@ function setup(){
 }
 
 function draw(){
-  background(0);
+  background(42, 231, 223);
+
+
 
   let sliderVal1 = dragonPosSlider.value;
   let x = map(sliderVal1, 0, 100, 0, width);
