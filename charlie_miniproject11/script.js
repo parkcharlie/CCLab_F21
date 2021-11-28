@@ -5,7 +5,7 @@ let cam;
 function setup(){
   createCanvas(640,480);
   cam=createCapture(VIDEO);
-  // cam.hide();
+  cam.hide();
   img = createImage(width, height);
 }
 
@@ -23,10 +23,14 @@ function draw(){
 
         let r = cam.pixels[index + 100];
         let g = cam.pixels[index + 0];
-        let b = cam.pixels[index + 0];
-        let a = cam.pixels[index + 13];
+        let b = cam.pixels[index + 20];
+        let a = cam.pixels[index + 15];
+
+        let avg = (r + g + b) / 3;
+        let size = map(avg, 0, 255, 1, gridSize)
         fill( r, g, b );
-        ellipse(x, y, gridSize+3, gridSize-5);
+        // ellipse(x, y, gridSize+10, gridSize-5);
+        ellipse(x, y, size, size)
     }
   }
 
