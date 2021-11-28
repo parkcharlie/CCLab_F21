@@ -30,7 +30,7 @@ function draw(){
         let size = map(avg, 0, 255, 1, gridSize)
         fill( r, g, b );
         // ellipse(x, y, gridSize+10, gridSize-5);
-        ellipse(x, y, size, size)
+        rect(x, y, size, size)
     }
   }
 
