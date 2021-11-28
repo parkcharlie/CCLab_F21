@@ -11,9 +11,6 @@ function setup(){
 
 function draw(){
   background(0);
-
-  // access pixels of image
-  // load pixels
   cam.loadPixels();
   img.loadPixels();
   let gridSize = 10;
@@ -29,13 +26,10 @@ function draw(){
         let avg = (r + g + b) / 3;
         let size = map(avg, 0, 255, 1, gridSize)
         fill( r, g, b );
-        // ellipse(x, y, gridSize+10, gridSize-5);
         rect(x, y, size, size)
     }
   }
 
-
   img.updatePixels();
-
   image(img,0,0);
 }
