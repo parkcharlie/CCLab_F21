@@ -39,3 +39,10 @@ h5 {
 .go {
   font-size: 30px;
 }
+.instruction {
+  font-size: 25px;
+  text-align: center;
+
+  border: 3px solid red;
+  margin: 300px;
+}
